@@ -1,13 +1,13 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Dragon Origin',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'DragonTide',
+  tagline: '龙源记：潮生万象录',
+  favicon: 'img/logo-ly.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -18,7 +18,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Jinhao Lee', // Usually your GitHub org/user name.
-  projectName: 'dragonorigin', // Usually your repo name.
+  projectName: 'DragonTide', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -28,7 +28,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh'],
   },
 
   presets: [
@@ -68,22 +68,35 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'DragonTide',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'DragonTide Logo',
+        src: 'img/logo-ly.png',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          to: '/docs/ocean-engine',
+          label: '洋流引擎',
+          position: 'right',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          to: '/docs/future-beacon',
+          label: '未来浮标',
+          position: 'right',
+        },
+        {
+          to: '/docs/career-tide',
+          label: '职海观潮',
+          position: 'right',
+        },
+        {
+          to: '/docs/bit-dragon-books',
+          label: '比特龙书单',
+          position: 'right',
+        },
+        {
+          to: '/blog',
+          label: '博客',
           position: 'right',
         },
       ],
@@ -115,18 +128,18 @@ const config: Config = {
               label: 'X',
               href: 'https://x.com/docusaurus',
             },
+            {
+              label: '知乎',
+              href: 'https://www.zhihu.com/people/dragon-origin12'
+            }
           ],
         },
         {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/StarLorder123',
             },
           ],
         },
